@@ -9,279 +9,563 @@
 
 \begin{document}
 \begin{center}
-    \huge
-    Kas's Software Engineering Practice Test of Doom\\
+      \huge
+      Kas's Software Engineering Practice Test of Doom\\
 
 \end{center}
 \normalsize
 Please note any answers in () Typically are not part of the answer rather are added context or a joke.\\
 
+\section{Intro to SWE}
+\begin{enumerate}
+      \item What is engineering?
+            The creative application of scientific prinicples to design or develop structures.\\
+
+      \item What is software Engineering?
+            The application of a systematic, disciplined, quantifiable approach to the developement, operation and maintenance of software, and the study of these approaches.
+            (or without the yap: the application of engineering to software).\\
+
+      \item What factors affect SW quality.\\
+            Complexity and change.\\
+
+      \item How does complexity affect quality?.\\
+            When a system becomes so complex a singular programmer can no longer understand it.\\
+
+      \item How does change affect quality?\\
+            The entropy of a software system increases with each change. Each implemented change erodes at the structure of the system. Making the next change more expensive. As time goes on
+            the cost of implementing changes will increase.
+
+      \item What are the methods of dealing with complexity?
+            Abstraction, Decomposition, and hierarchy.
+
+      \item What are the ways of abstracting through modeling?\\
+            System mode, Task model, and Issue model.\\
+
+      \item Give an exmaple of a System model and what it does.\\
+            Object model: What is the struct of the system.\\
+            Functional Model: What are the functions of the system and how does data flow through the system.\\
+            Dynamic Model: How does the system react to external events.\\
+
+      \item give an example of a task model and what it does.\\
+            Gantt/PERT chart: What are the dependecies between each task.\\
+            Schedule: How can this be done within a time limit.\\
+            Org Chart: What are the roles in the project.\\
+
+      \item What is an issues model?\\
+            What are the open and closed issues. What constraints were posed by the client? What resolutions were made?\\
+
+      \item What is decomposition?\\
+            A technique used to master complexity (divide and conquer type stuff).\\
+
+      \item What are each of the types of decomposition?\\
+            Functional decomposition and Object-oriented decomposition.\\
+
+      \item What is hierarchy.\\
+            Providing simple relationships between different chunks.\\
+
+      \item what are the two important hierarchies?\\
+            Part of and is kind of.\\
+\end{enumerate}
+
+\section{Lifecycles}
+\begin{enumerate}
+      \item What is a Software developement Life cycle?
+            A set of activites and their realtionships to ea chother to support the developement of software.\\
+
+      \item What was the first life cycle?\\
+            Waterfall model (wooo)\\
+
+      \item What are the benefits of the waterfall model?\\
+            Nice milestones, No need to look back, one activity at a time, and easy to check progress.\\
+
+      \item what are thecons of a waterfall model?\\
+            Software developement tends to not be linear and you'll need to go back and refine.\\
+
+      \item When should one use a prototyping model?\\
+            When user requirements are unclear. For systems with high emphasis on the UI and require a high degree of user interaction.\\
+
+      \item What are the pros of a prototype model?
+            Iterative process, frequent feedback, fast.\\
+
+      \item What are the cons of a prototype model?\\
+            Design compromise frequently due to time constraints, customer could think it's a real product. Lack of robustness and completeness and at the end of each iteration we have a prototype.\\
+
+      \item what are the two types of prototype and describe them.\\
+            Functional prototype: implement and deliever an operational system with minimum funcftionally and build from there.\\
+            Exploratory prototype: Implement part oft he system to learn more about the requirements.\\
+            Revolutionary prototyping: Get user expierence with a throwaway version to get the requirements right then build the whole system\\
+            Evolutionary Prototyping: Used as the basis for the implementation of the final system.\\
+
+      \item What is the disadvantage of evolutionary prototyping?\\
+            Can only be used if target system can be constructed in a prototyping language.\\
+
+      \item What is the spiral model?
+            Use a waterfall model for each prototype developement (a cycle). If risk has been resolved evaluate the results of the cycle and plan for the next. If you run into an unsolvable
+            product terminate (give up all roads leave to doom).\\
+
+      \item what are the advantages of a spiral model?
+            \\ Model runs through the entire lifecycle of software and is iterative.\\
+
+      \item what are the disadvantages?\\
+            Difficult to convince customers the process is easily manageable. Project length cannot be determined.\\
+
+      \item When is a SW developement process considred mature?\\
+            If the develpement activites are well defined and if management has some control over the quality, budget, and Schedule in the project.\\
+
+      \item what are the 5 maturity levels?\\
+            Initial Level (ad hoc/chaotic)\\
+            Repeatable level the process depends on individuals called champions.\\
+            Defined level the process is institutionalized (sanctioned by management).\\
+            MAnaged level activties are measured and provide feeback for resource allocation however the process is not changing.\\
+            Optimizing level process allows feedback of information to change the process itself.\\
+
+      \item What is agile based on.\\
+            It is difficult to predict in advance which requiprements or customer priorities will change.\\
+            For many types of software design and construction activities are interleaved.\\
+            Analysis, design, and testing are not as predictable from a planning perspective.\\
+
+      \item Whatare the principles of agile?\\
+            Highest priority is to satisfy the customer with early and continous deliever of valuable software.\\
+            Welcome changing requirements anywhere in development.\\
+            Delievering software frequently with a preference for shorter delievery schedules\\
+            Business people and developers must work togheter daily\\
+            Face-to-face communcation is the most effective method of conveying informaiotn within the developement team.\\
+
+      \item What is DevOps?\\
+            The union of people, process, and products to enable continous delievery of value to end users.\\
+
+      \item what is the gaol of dev ops?\\
+            To shorten developement time.\\
+
+\end{enumerate}
+\section{Modeling with UML}
+\begin{enumerate}
+      \item What does modeling help achieve?\\
+            building an abstraction of reality. Ignores irrelatant detials through abstractions.\\
+
+      \item Why model software?\\
+            Software is becoming increasingly more complex. Code is not easily understandable by developers who did not write it. We need
+            simplier representations for complex systems.\\
+
+      \item what is a Phenomenon?\\
+            An ojbect in the world of a domain as you percieve it.\\
+
+      \item what is a concept?\\
+            Describes the properties of phenomena that are common.\\
+
+      \item What is an application domain?\\
+            The enviroment in which the system is operating.\\
+
+      \item what is a solution domain.\\
+            Technologies avaible to build the system.\\
+
+      \item What is a class diagram?\\
+            Describe the static structure of a system.\\
+      \item What is a use case diagram.\\
+            Describe the functional behavior of the system as seen by the user.\\
+      \item what is a sequence diagram.\\
+            Describe the dynamic beahvior between actors and the system between objects of a system.\\
+
+      \item what is a state chart diagram.\\
+            Describe the dyanmic behavior of an individual object (DFA!).
+      \item What is an activity diagram?\\
+            Mdeol the dynamic behavior of a system, in particular the workflow.\\
+
+      \item what is the extends relationship in Use cases and how is it represented?\\
+            It is represented by <<extends>> over the arrow pointing towards what it's extending. Extending represent exception cases in a use case.\\
+
+      \item what is the includes relation in Use cases and how is it represented?\\
+            Similar to extends but <<includes>>. Represents behavior that is factored out of the use case. beavhior is factored out for reuse.\\
+
+      \item what is the inherit relationship and how is it represented?\\
+            \includegraphics*{inherit.png}\\
+            Relationship used to specialize another more generalized use case.\\
+
+      \item what does a class represent?\\
+            A concept.\\
+
+      \item what are the parts of a class?\\
+            Attributes, Operations, Name, and signature.\\
+
+      \item how do you represent a One or more assocation?\\
+            1..*\\
+      \item How would you represent a specfied range?\\
+            2..7\\
+
+      \item How would you represent disjoint ranges?\\
+            2, 3..8\\
+
+      \item what is aggregation and how is it drawn?\\
+            \includegraphics*[scale=.5]{aggregation.png}\\
+            A special case of assocation denoting a consists of hierarchy. The aggregate is the parent class and the componets are the child classes.\\
+
+      \item What does a solid diamond represent?\\
+            Composition, a stronger form of aggregation where componets cannot exist without the aggregate(parent).\\
+
+      \item What is inheritance in Class models?\\
+            Children classes inherit the attrbutes and operations of their parent class. Helps by eliminating redundancy.\\
+
+      \item In UML what is a package?\\
+            A UML mechanism for organizing elements into groups. They are the basic grouping construct you can organize UML models with.\\
+
+      \item How is interation deonted in Sequence diagrams?\\
+            with a *.\\
+      \item How are conditions denoted in sequence daigrams?\\
+            With a boolean expression in [] before the messages name.\\
+
+      \item How is creation and destruction represented in UML?\\
+            Denoted with a message pointing towards the object at the start for creation. Destruction is denoted by a message with an X.\\
+
+      \item How do you draw an initial state, history state, final state?\\
+            \includegraphics*{hi.png}\\
+            \includegraphics*{fianlstate.png}\\
+
+      \item How do you represent a state in a state chart?\\
+            With a rounded box with the states name in the top.\\
+
+      \item How do you represent an Orthgonal state?\\
+            \includegraphics*{orth.png}\\
+
+      \item T/F for a state to be active the state of the parent doesn't matter (Hamdy quickfire round).\\
+            False, the parent must be active.\\
+
+      \item T/F at most one state of a non-orthogonal state can be active at a time.\\
+            True.\\
+
+      \item T/F Only one orthogonal state can be active at a time.\\
+            False all are active.\\
+
+      \item T/F threads on orthogonal states are orthogonal states as well.\\
+            False, each thread is a non-Orthgonal state.\\
+
+      \item T/F when an event occurs the source must be active for the event labeled transition to occur.\\
+            True.\\
+
+      \item T/F when activating a destination state the ancestors need be activated.\\
+            False, they must be activated.\\
+            \includegraphics*{ort.png}
+      \item T/F Each non-Orthogonal state may contain a history state, initial and/or final state.\\
+            True.\\
+
+      \item T/F When activating a non-orthononal state we must also activate the child state indicated by the initial state unless the containing non-orthogonal state
+            is the ancestor of our destination state.\\
+            True.\\
+            \includegraphics*[scale=.34]{statetrans.png}\\
+      \item How does a history state work?\\
+            Remembers the child state last active within the containing non-orthogonal state.\\
+
+      \item In an activity daigram how do you draw an initial state and final state?\\
+            \includegraphics*{actif.png}\\
+
+      \item How do you represent a decision/merge elements in an activity diagram?\\
+            With a non-solid diamond.\\
+
+      \item How do you fork/Join in an activity diagram?\\
+            With a solid black bar and the branching elements.\\
+
+      \item how do you identify an action in an activity diagram?\\
+            With a rounded rectangle box with the action inside.\\
+
+      \item How do you draw a transition?\\
+            \includegraphics*{trans.png}\\
+
+      \item What is the guard in a transition?\\
+            A boolean expression.\\
+      \item How do you draw an accept signal and send signal?\\
+            \includegraphics*{signals.png}\\
+
+      \item What is a component diagram?\\
+            Shows the organizations and dependecies among componets. Component diagram hides its implementation. Specifies the physical dependcy to interfaces it requires.\\
+
+      \item What is the difference between a component diagram and class diagram?\\
+            Components are logical abstractions while classes are physical things. \\
+
+      \item draw a sample component diagram.\\
+            \includegraphics*[scale=.5]{samplecomp.png}
+
+
+      \item What is a deployment diagram?\\
+            A diagram that shows configuration of processing nodes at run time. Communcation between these nodes and deployed artifacts that reside on them.\\
+
+      \item What does a connector represent?\\
+            A communcation method be it physical or a software protocal (or psychic).
+            \\
+
+
+      \item what shape represents a component?\\
+            A 3-d Cube.\\
+
+      \item What makes a good problem statement?\\
+            The current situation, the funcftionally of a new system, the enviroment the system will be deployed in, delieverables expected by the client, delievery dates, and a set of Acceptance criteria.\\
+
+
+\end{enumerate}
 \section{Testing}
 
 \begin{enumerate}
-    \item What is the cost of testing?\\
-          At least half of your development budget will be spent on testing.\\
+      \item What is the cost of testing?\\
+            At least half of your development budget will be spent on testing.\\
 
-    \item Is not testing a great way of saving money?\\
-          No, infact it can actually cost more money. Debugging later and later into a project tends to cost more due to the 1-10-100 rule.\\
+      \item Is not testing a great way of saving money?\\
+            No, infact it can actually cost more money. Debugging later and later into a project tends to cost more due to the 1-10-100 rule.\\
 
-    \item What are the four types of activities testing can be broken up into and what type of knowledge is required?\\
-          Test design: Designing test values to satisfy coverage criteria or other engineering goals. Requires knowledge of discrete math, programming, and testing.\\
-          Test automation: Embed test values into executable scripts. Requires knowledge of scripting.\\
-          test execution: run tests on software and record the results. Requires little knowledge.\\
-          Test evaluation: Evaluate results of testing and report to developers. Requires domain knowledge.\\
+      \item What are the four types of activities testing can be broken up into and what type of knowledge is required?\\
+            Test design: Designing test values to satisfy coverage criteria or other engineering goals. Requires knowledge of discrete math, programming, and testing.\\
+            Test automation: Embed test values into executable scripts. Requires knowledge of scripting.\\
+            test execution: run tests on software and record the results. Requires little knowledge.\\
+            Test evaluation: Evaluate results of testing and report to developers. Requires domain knowledge.\\
 
-    \item What is validation in testing?\\
-          The process of evaluating software at the end of software development to esnure compliance with intended usage.\\
+      \item What is validation in testing?\\
+            The process of evaluating software at the end of software development to esnure compliance with intended usage.\\
 
-    \item what is verification in testing?\\
-          The process of determing whether the products of a given phase or software development process fulfills the requirement established during the previous phase.\\
+      \item what is verification in testing?\\
+            The process of determing whether the products of a given phase or software development process fulfills the requirement established during the previous phase.\\
 
-    \item What is a failure in testing.\\
-          Any deviation  of the observed behavior from the specified behavior.\\
+      \item What is a failure in testing.\\
+            Any deviation  of the observed behavior from the specified behavior.\\
 
-    \item what is an error in testing?\\
-          The system in a state such that further processing by the system will cause a failure.\\
+      \item what is an error in testing?\\
+            The system in a state such that further processing by the system will cause a failure.\\
 
-    \item What is a fault in testing?\\
-          The mechanical or algorithmic cause of an error. Also known as a bug.\\
+      \item What is a fault in testing?\\
+            The mechanical or algorithmic cause of an error. Also known as a bug.\\
 
 
-    \item what are some ways of dealing with errors?
-          verification, Modular redundancy, Declaring a bug to be a feature, Patching, and testing.
+      \item what are some ways of dealing with errors?
+            verification, Modular redundancy, Declaring a bug to be a feature, Patching, and testing.
 
-    \item What is testing?
-          Finding inputs that cause the software to fail.
+      \item What is testing?
+            Finding inputs that cause the software to fail.
 
-    \item What is debugging?
-          The process of finding a fault given a failure.\\
+      \item What is debugging?
+            The process of finding a fault given a failure.\\
 
-    \item what is a test case?
-          A set of test inputs, execution conditions, and expected results. Test inputs are the values that directly satisfy one test requirement.
+      \item what is a test case?
+            A set of test inputs, execution conditions, and expected results. Test inputs are the values that directly satisfy one test requirement.
 
-    \item What is black box testing?\\
-          Focusing on I/O behavior. If we are able to predict the output for any given input. Typically impossible to generate all possible inputs.\\
-    \item What is the goal of black box testing?\\
-          Reduce the number of test cases by equivalence partitioning. Divide input conditions into equivalnce classes and choose a representative for each class.\\
-          equivalnce classes are determined through coverage and being disjoint.
+      \item What is black box testing?\\
+            Focusing on I/O behavior. If we are able to predict the output for any given input. Typically impossible to generate all possible inputs.\\
+      \item What is the goal of black box testing?\\
+            Reduce the number of test cases by equivalence partitioning. Divide input conditions into equivalnce classes and choose a representative for each class.\\
+            equivalnce classes are determined through coverage and being disjoint.
 
-    \item What is white box testing?\\
-          Testing with the goal of Thoroughness/coverage. Every statement in the component is executed at least once.\\
+      \item What is white box testing?\\
+            Testing with the goal of Thoroughness/coverage. Every statement in the component is executed at least once.\\
 
-    \item What are the types of White-box testing?
-          Statement testing, Loop testing, Path Testing, Branch Testing.\\
+      \item What are the types of White-box testing?
+            Statement testing, Loop testing, Path Testing, Branch Testing.\\
 
-    \item What is static Analysis?\\
-          Analysis done without running a program.
+      \item What is static Analysis?\\
+            Analysis done without running a program.
 
-    \item what are the types of static Analysis?\\
-          Hand execution (reading the source code), Walk-Through (information presentation), Code inspection (Formal presentation), Automated tools for checking syntatic and semantic errors or a departure from coding standards.\\
+      \item what are the types of static Analysis?\\
+            Hand execution (reading the source code), Walk-Through (information presentation), Code inspection (Formal presentation), Automated tools for checking syntatic and semantic errors or a departure from coding standards.\\
 
-    \item What id dynamic Analysis?\\
-          Testing done with running a program.\\
+      \item What id dynamic Analysis?\\
+            Testing done with running a program.\\
 
-    \item What are the types of dynamic analysis?\\
-          Black-Box testing and White-box testing.\\
+      \item What are the types of dynamic analysis?\\
+            Black-Box testing and White-box testing.\\
 
-    \item Is it possible to completely test any abritary system?\\
-          No, you'd have to solve the halting problem and even if it was solved it'd cost a lot of time and money.\\
+      \item Is it possible to completely test any abritary system?\\
+            No, you'd have to solve the halting problem and even if it was solved it'd cost a lot of time and money.\\
 
 
-    \item What are the 4 testing steps?\\
-          Select what needs to be measured, Decide how the testing is done, develop test cases, and create a test oracle.
+      \item What are the 4 testing steps?\\
+            Select what needs to be measured, Decide how the testing is done, develop test cases, and create a test oracle.
 
 
-    \item What is a test oracle?\\
-          The set of predicted results for a set of test cases. It must be written down before the testing occurs.\\
+      \item What is a test oracle?\\
+            The set of predicted results for a set of test cases. It must be written down before the testing occurs.\\
 
-    \item What is unit testing?\\
-          The testing of a unit. (Quite helpful I guess...)\\
+      \item What is unit testing?\\
+            The testing of a unit. (Quite helpful I guess...)\\
 
-    \item What is a unit?
-          A module or a small set of modules. A few examples, classes or interfaces.\\
+      \item What is a unit?
+            A module or a small set of modules. A few examples, classes or interfaces.\\
 
-    \item Why bother with unit testing?\\
-          It's practical and allows a divide-and-conquer approach. Splitting systems into units is very helpful and narrow down where bugs are. You don't want to chase down bugs in other units. Support regresion testing
-          allows you to make changes to code and know if you broke something. Improves confidence that changing one many things doesn't break everything (yay!).\\
+      \item Why bother with unit testing?\\
+            It's practical and allows a divide-and-conquer approach. Splitting systems into units is very helpful and narrow down where bugs are. You don't want to chase down bugs in other units. Support regresion testing
+            allows you to make changes to code and know if you broke something. Improves confidence that changing one many things doesn't break everything (yay!).\\
 
-    \item How can one do unit testing?\\
-          Build systems in layers. Then test upwards. Start with classes that don't depend on others and countinue testing building on already tested classes.
+      \item How can one do unit testing?\\
+            Build systems in layers. Then test upwards. Start with classes that don't depend on others and countinue testing building on already tested classes.
 
-    \item Benefits of unit testing?
-          Avoid having to write stubs. When testing a module it depends on verified reliable modules.\\
+      \item Benefits of unit testing?
+            Avoid having to write stubs. When testing a module it depends on verified reliable modules.\\
 
-    \item What are some unit testing Heurisitcs?\\
-          Create unit tests as soon as object design is completed. Develop the test cases. Cross-check the test cases to eliminate duplicats. Desk check your source code. Create a test harness. Execute the test cases. Compare the results
-          of the test with your orcale.\\
+      \item What are some unit testing Heurisitcs?\\
+            Create unit tests as soon as object design is completed. Develop the test cases. Cross-check the test cases to eliminate duplicats. Desk check your source code. Create a test harness. Execute the test cases. Compare the results
+            of the test with your orcale.\\
 
-    \item What are the parts of test code?
-          \\ The test fixture, test driver, and test oracle.\\
-    \item What is the test driver?\\
-          The class that runs the tests.\\
+      \item What are the parts of test code?
+            \\ The test fixture, test driver, and test oracle.\\
+      \item What is the test driver?\\
+            The class that runs the tests.\\
 
-    \item What is the test fixture?\\
-          Set of variables used in testing.\\
+      \item What is the test fixture?\\
+            Set of variables used in testing.\\
 
-    \item What is the intergration testing strategy?\\
-          The entire system is viewed as a collection of subsystems. Note: The order which subsystems are selected for testing and intergration determines the specific strategy.\\
+      \item What is the intergration testing strategy?\\
+            The entire system is viewed as a collection of subsystems. Note: The order which subsystems are selected for testing and intergration determines the specific strategy.\\
 
 
-    \item What is system testing?\\
-          Ensure that the complete system compiles with the functional and nonfunctional requirements.\\
-          Functional testing, Perforamnce testing, Acceptance testing, and installation testing are all different types of system testing.\\
+      \item What is system testing?\\
+            Ensure that the complete system compiles with the functional and nonfunctional requirements.\\
+            Functional testing, Perforamnce testing, Acceptance testing, and installation testing are all different types of system testing.\\
 
-    \item What is the impact of requirements on system testing?\\
-          The more explicit the measurements the easier they are to test. Quality of use cases determines ease of functional testing. Quality of subsystem determines the ease of structure testing.
-          Quality of nonfunctional requirements and constraints determine the ease of perforamnce tests.\\
+      \item What is the impact of requirements on system testing?\\
+            The more explicit the measurements the easier they are to test. Quality of use cases determines ease of functional testing. Quality of subsystem determines the ease of structure testing.
+            Quality of nonfunctional requirements and constraints determine the ease of perforamnce tests.\\
 
-    \item What are test requirements?\\
-          Specific thigns that must be satisfied or covered during testing.\\
+      \item What are test requirements?\\
+            Specific thigns that must be satisfied or covered during testing.\\
 
-    \item What are test criterion?\\
-          A collection of rules and a process that defines test requirements.\\
+      \item What are test criterion?\\
+            A collection of rules and a process that defines test requirements.\\
 
-    \item What is another way of describing coverage in testing. (Hint think of test sets).\\
-          Given a set of test requirements X for coverage criterion C, a test set T satisfies C coverage iff for every test requirement in X there is at least one test in T it is satisfied by a test requirement.\\
+      \item What is another way of describing coverage in testing. (Hint think of test sets).\\
+            Given a set of test requirements X for coverage criterion C, a test set T satisfies C coverage iff for every test requirement in X there is at least one test in T it is satisfied by a test requirement.\\
 
-    \item What is criteria subsumption?
-          A test criterion C1 subsums C2 iff every set of test cases that satisfies criterion C1 also satisfies C2. (basically subsets)\\
+      \item What is criteria subsumption?
+            A test criterion C1 subsums C2 iff every set of test cases that satisfies criterion C1 also satisfies C2. (basically subsets)\\
 
-    \item what are some criteria structures?\\
-          Graphs, Logical expresions, Input domain characterization, syntatic structures.\\
+      \item what are some criteria structures?\\
+            Graphs, Logical expresions, Input domain characterization, syntatic structures.\\
 
-    \item What is predicate coveage in Logical expresions?\\
-          Each predicate must be True or False.\\
+      \item What is predicate coveage in Logical expresions?\\
+            Each predicate must be True or False.\\
 
-    \item What is closure Coverage in Logical expresions?\\
-          Each clause much be true or false.\\
+      \item What is closure Coverage in Logical expresions?\\
+            Each clause much be true or false.\\
 
-    \item Combinatorial coverage in Logical expresions?\\
-          Various combinations of clauses.\\
+      \item Combinatorial coverage in Logical expresions?\\
+            Various combinations of clauses.\\
 
-    \item What is active caluse coverage?\\
-          Each caluse must determine the predicate's result.\\
+      \item What is active caluse coverage?\\
+            Each caluse must determine the predicate's result.\\
 
-    \item What is input domain characterization?\\
-          They describe the input domain of the software. Identify inputs, parameters, or other categorization. Partition each input into finite stes of representative classes. Choose combinations of values.\\
+      \item What is input domain characterization?\\
+            They describe the input domain of the software. Identify inputs, parameters, or other categorization. Partition each input into finite stes of representative classes. Choose combinations of values.\\
 
-    \item What are syntatic strcutres?\\
-          Based on a grammar or other syntactic definition.
+      \item What are syntatic strcutres?\\
+            Based on a grammar or other syntactic definition.
 
-    \item What is mutation testing and what is it an example of?\\
-          When you introduce small changes tot he program and find tests that cause the mutant programs to fail. Failure is determined by a different output from the original program. Check the output of useful tests on the original program.\\
+      \item What is mutation testing and what is it an example of?\\
+            When you introduce small changes tot he program and find tests that cause the mutant programs to fail. Failure is determined by a different output from the original program. Check the output of useful tests on the original program.\\
 
-    \item What is Model-Based testing.\\
-          Derives tests from a model that describes some aspects of the system under a test. Model describes part of the behavior.\\
+      \item What is Model-Based testing.\\
+            Derives tests from a model that describes some aspects of the system under a test. Model describes part of the behavior.\\
 
-    \item What is a coveage graph?\\
-          The most commonly used structure for testing. Made up of graphs where tests are intended to cover the graph in some way.\\
+      \item What is a coveage graph?\\
+            The most commonly used structure for testing. Made up of graphs where tests are intended to cover the graph in some way.\\
 
-    \item What is a graph?
-          A nonempty set Z of nodes. A set nonempty set X of initial nodes. A nonempty set of final nodes Y. A set E of edges where each edge connects one node to another.\\
+      \item What is a graph?
+            A nonempty set Z of nodes. A set nonempty set X of initial nodes. A nonempty set of final nodes Y. A set E of edges where each edge connects one node to another.\\
 
-    \item What is a path in a graph?\\
-          A sequence of nodes.\\
+      \item What is a path in a graph?\\
+            A sequence of nodes.\\
 
-    \item What is the length in a graph?
-          \\ The number of edges.\\
+      \item What is the length in a graph?
+            \\ The number of edges.\\
 
-    \item what is a subpath?\\
-          A subsequence of nodes in p is a subpath of p.\\
+      \item what is a subpath?\\
+            A subsequence of nodes in p is a subpath of p.\\
 
-    \item What is reach in graphs?\\
-          subgraph that can be reached from a node n.\\
+      \item What is reach in graphs?\\
+            subgraph that can be reached from a node n.\\
 
-    \item What is a test path?
-          \\ A path that starts at an initial node and ends at a final node. Test paths represent execution of test cases.\\
+      \item What is a test path?
+            \\ A path that starts at an initial node and ends at a final node. Test paths represent execution of test cases.\\
 
-    \item what is an SESE graph?\\
-          All test paths start at a single node and end at another node. Single-entry and single-exit.\\
+      \item what is an SESE graph?\\
+            All test paths start at a single node and end at another node. Single-entry and single-exit.\\
 
-    \item What is visiting?
-          \\ A test path p visist a node if a node n is in p.\\
-    \item What is touring?\\
-          A test path p tours a subpath q if q is a subpath of p.\\
+      \item What is visiting?
+            \\ A test path p visist a node if a node n is in p.\\
+      \item What is touring?\\
+            A test path p tours a subpath q if q is a subpath of p.\\
 
-    \item what is Node coveage?\\
-          Requires that each node and edge in a graph be executed.
-          Test set T satisfies node coveage on a graph G iff for every syntatically reachable node n in N, there is some path in path(T) such that p visits n.
-          (simple version Test requirements contain each reachable node in G.)\\
+      \item what is Node coveage?\\
+            Requires that each node and edge in a graph be executed.
+            Test set T satisfies node coveage on a graph G iff for every syntatically reachable node n in N, there is some path in path(T) such that p visits n.
+            (simple version Test requirements contain each reachable node in G.)\\
 
-    \item What is edge coverage?\\
-          A slightly stronger system than node coverage. Test requirements contain each reachable path of length up to 1, inclusive, in G.\\
-          Length up to 1 allows graphs with one and no edges.\\
+      \item What is edge coverage?\\
+            A slightly stronger system than node coverage. Test requirements contain each reachable path of length up to 1, inclusive, in G.\\
+            Length up to 1 allows graphs with one and no edges.\\
 
-    \item When are Node coveage and edge coverage difference?\\
-          When there is an edge and another subpath between a pair of nodes.\\
-          Node coverage TR = $\{0 ,1 ,2\}$.\\
-          Test path = $[0 , 1, 2]$.\\
-          Edge coverage TR $= \{0, 1, 2\}$.\\
-          Test path = $[0, 1, 2], [0, 2]$.\\
+      \item When are Node coveage and edge coverage difference?\\
+            When there is an edge and another subpath between a pair of nodes.\\
+            Node coverage TR = $\{0 ,1 ,2\}$.\\
+            Test path = $[0 , 1, 2]$.\\
+            Edge coverage TR $= \{0, 1, 2\}$.\\
+            Test path = $[0, 1, 2], [0, 2]$.\\
 
-    \item What is edge pair coveage?\\
-          Requires pairs of edges or subpaths of length 2. Test requirements contain each reachable path of length up to 2, inclusive, in G.\\
+      \item What is edge pair coveage?\\
+            Requires pairs of edges or subpaths of length 2. Test requirements contain each reachable path of length up to 2, inclusive, in G.\\
 
-    \item What is complete path coverage and where does it fail?\\
-          Test requirements contain all paths in G. It fails whenever the program introduces a loop. Infiniately many TR paths arrise unfornately (might be solvable with the infinite monkey theorem assuming you have infinite monkeys...).\\
+      \item What is complete path coverage and where does it fail?\\
+            Test requirements contain all paths in G. It fails whenever the program introduces a loop. Infiniately many TR paths arrise unfornately (might be solvable with the infinite monkey theorem assuming you have infinite monkeys...).\\
 
-    \item Specified Path coverage is?\\
-          Test requirements contain a set S of test paths, where S is supplied as a parameter.\\
-    \item The following questions use the following graph.\\
-          \includegraphics*[scale=.5]{graph1.png}\\
-    \item What are the test paths of the following image?\\
-          \includegraphics*[scale=.5]{nodec.png}\\
-          \includegraphics*[scale=.5]{nodectp.png}\\
-    \item What are the test paths of the following image?\\
-          \includegraphics*[scale=.5]{edgec.png}\\
-          \includegraphics*[scale=.5]{edgectp.png}\\
-    \item What are the test paths of the following image?\\
-          \includegraphics*[scale=.5]{edgepc.png}\\
-          \includegraphics*[scale=.5]{edgepctp.png}\\
+      \item Specified Path coverage is?\\
+            Test requirements contain a set S of test paths, where S is supplied as a parameter.\\
+      \item The following questions use the following graph.\\
+            \includegraphics*[scale=.5]{graph1.png}\\
+      \item What are the test paths of the following image?\\
+            \includegraphics*[scale=.5]{nodec.png}\\
+            \includegraphics*[scale=.5]{nodectp.png}\\
+      \item What are the test paths of the following image?\\
+            \includegraphics*[scale=.5]{edgec.png}\\
+            \includegraphics*[scale=.5]{edgectp.png}\\
+      \item What are the test paths of the following image?\\
+            \includegraphics*[scale=.5]{edgepc.png}\\
+            \includegraphics*[scale=.5]{edgepctp.png}\\
 
 
-    \item What are the test paths for Complete Path Coverage?\\
-          infinitely many paths exist unfornately... As long as a path reaches the end it'd be considered\\
+      \item What are the test paths for Complete Path Coverage?\\
+            infinitely many paths exist unfornately... As long as a path reaches the end it'd be considered\\
 
-    \item What is a simple path?\\
-          If a given path from two nodes no node appears more than once except maybe the first and last nodes are the same.\\
-          There are no internal loops, include all other subpaths, a simple path.\\
+      \item What is a simple path?\\
+            If a given path from two nodes no node appears more than once except maybe the first and last nodes are the same.\\
+            There are no internal loops, include all other subpaths, a simple path.\\
 
-    \item What is a prime path?\\
-          A simple path that does not appear as a proper subpath of any other simple path.\\
+      \item What is a prime path?\\
+            A simple path that does not appear as a proper subpath of any other simple path.\\
 
-    \item What is prime path coverage?\\
-          A simple, elegant, and finite criterion that requires loops to be executed as well as skipped. Test requirements contain each prime path in G.\\
-          Will tour all paths of any lenghth. Subsumming node, edge, and edge-pair coverage.\\
+      \item What is prime path coverage?\\
+            A simple, elegant, and finite criterion that requires loops to be executed as well as skipped. Test requirements contain each prime path in G.\\
+            Will tour all paths of any lenghth. Subsumming node, edge, and edge-pair coverage.\\
 
-    \item Refering to the previous graph figure what are some prime paths?\\
-          \includegraphics*[scale=.5]{primepaths.png}\\
+      \item Refering to the previous graph figure what are some prime paths?\\
+            \includegraphics*[scale=.5]{primepaths.png}\\
 
-    \item What is data flow criteria.\\
-          A way to ensure that values are computed and used correctly.\\
+      \item What is data flow criteria.\\
+            A way to ensure that values are computed and used correctly.\\
 
-    \item What are the parts of Data flow criteria?\\
-          Definition (def) the location where a value for a variable is stored into memory. Use a location where a variable's value is accessed. def (n) or def (e) the set of variables defined by node n or edge e.
-          use (n) or use (e) the set of variables used by node n or edge e.\\
+      \item What are the parts of Data flow criteria?\\
+            Definition (def) the location where a value for a variable is stored into memory. Use a location where a variable's value is accessed. def (n) or def (e) the set of variables defined by node n or edge e.
+            use (n) or use (e) the set of variables used by node n or edge e.\\
 
-    \item What is a DU pair?\\
-          A pair of locations (x, y) such that a variable v is defined at x and used at y.\\
+      \item What is a DU pair?\\
+            A pair of locations (x, y) such that a variable v is defined at x and used at y.\\
 
-    \item What is Reach in a DU pair?\\
-          If there is a def-clear path from X to Y with respect to v, the def of v at x reaches the use at y.\\
+      \item What is Reach in a DU pair?\\
+            If there is a def-clear path from X to Y with respect to v, the def of v at x reaches the use at y.\\
 
-    \item what is Def-Clear?\\
-          A path with respect to variable v if v is not given another value on any of the nodes/edges in the path. No redefinitions.\\
+      \item what is Def-Clear?\\
+            A path with respect to variable v if v is not given another value on any of the nodes/edges in the path. No redefinitions.\\
 
-    \item What is a du-path?
-          A simple subpath that is def-clear with respect to v from def to use.\\
+      \item What is a du-path?
+            A simple subpath that is def-clear with respect to v from def to use.\\
 
-    \item What is graph coverage for source code?\\
-          The most common application is to the graph source. Made of graphs usually the control flow graph, Node coverage execute every statement, edge coverage execute every brach, loops looping structures, and data flow coverage
-          augment the control flow graph.\\
+      \item What is graph coverage for source code?\\
+            The most common application is to the graph source. Made of graphs usually the control flow graph, Node coverage execute every statement, edge coverage execute every brach, loops looping structures, and data flow coverage
+            augment the control flow graph.\\
 
-    \item What is a control flow graph.\\
-          Modles all executions of a method by describing control structures. Made of nodes statements or sequences of statements, Edges transfers of control, and basic block a sequence of statements
-          such that if the first statement, all statements will be (branchless). Typically annotated with extra information.\\
+      \item What is a control flow graph.\\
+            Modles all executions of a method by describing control structures. Made of nodes statements or sequences of statements, Edges transfers of control, and basic block a sequence of statements
+            such that if the first statement, all statements will be (branchless). Typically annotated with extra information.\\
 
 
 
