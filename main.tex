@@ -450,6 +450,77 @@ Please note any answers in () Typically are not part of the answer rather are ad
       \item Why bother with open architecture?\\
             Runtime Efficency\\
 
+      \item What is system decomposition?\\
+            Identification of subsystems, servies, and their relationshp to eachother.\\
+
+      \item What are some types of software architecture?\\
+            Pipe and filter\\
+            Repositor\\
+            Client/server\\
+            Peer-To-Peer\\
+            MVC (Model view controller)\\
+            Layers\\
+
+      \item What is a pipe and filter?\\
+            Input data originates from data source components. Output data is consumed by data sink components. A series of
+            filters are put between linked by pipes.\\
+
+      \item What does a filter do?\\
+            It is a transformation required to convert the input into the output.\\
+
+      \item When to use a pipe and filter?\\
+            systems that apply transformations to streams of data without intervention of users.\\
+
+      \item What is the repository style?\\
+            Subsystems access and modify data from a single data structure called a central repository. subsystems are loosely coupled and only interact through the repository\\
+
+      \item When should you use one?\\
+            Applications with constantly changing, complex data processing tasks.\\
+
+      \item What is a problem with this style?\\
+            It tends to have a bottle neck.\\
+
+      \item What is the client server style?\\
+            One or many servers provide servies to instances of subsystems (clients).\\
+
+      \item T/F The server calls upon clients?\\
+            False the client calls upon the server. It'd be a bit weird to have a server constantly asking if you're ready. (aye boss are you ready to turn off the lights yet?)\\
+
+      \item When should you use one?\\
+            Typically data base systems.\\
+
+      \item What are the goals of client server style?\\
+            Service portability: A server can be installed on a variety of machines and OS's in a variety of networking enviroments.\\
+            Transparency The server might itself but distributed but should provide a single logical service to the user.\\
+            Perforamnce client should provide interactive dispaly intensive tasks while the server does the CPU intensive operations.\\
+            Scalability Server should have the capacity to handle a large number of clients.\\
+            Reliability system should service node or communcation link problems.\\
+
+      \item What is the Peer-To-Peer architecture styel?\\
+            Generalization of client server however now everyone can be a server or a client.\\
+
+
+      \item What are the three types of subsystems in MVC?\\
+            Model, view, controller.\\
+
+      \item What is MVC?\\
+            A special case of repository architecture. Model subsystems implements central data structures, controller subsystem explicitly dicates the control flow.\\
+
+      \item What is a microservice?\\
+            Where software is decomposed into small indepedent systems that all work together.\\
+
+      \item What is monolith architecture?\\
+            When a singular system where all services are within the same system.\\
+
+      \item What is the benefit of a microservice?\\
+            Deployement flexibility, techonlogy flexibiilty, and can be scaled seperately.\\
+
+      \item what are some disadvantage?\\
+            Deployement complexity and service discovery.\\
+
+
+
+
 \end{enumerate}
 
 \section{Testing}
