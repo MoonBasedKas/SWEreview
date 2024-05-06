@@ -382,6 +382,73 @@ Please note any answers in () Typically are not part of the answer rather are ad
       \item What is system design?\\
             The process of desinging elements of a system (so system design is designing systems lol).\\
 
+      \item What are 3 of the 8 parts of system design.\\
+            Design goals\\
+            System decomposition\\
+            Concurrency\\
+            Hardware/Software Mapping\\
+            Data management\\
+            Global Resource Handling\\
+            Software Control\\
+            Boundary Conditions\\
+
+      \item Give two examples of design trade offs.\\
+            Functionality vs Usability\\
+            Efficency vs Portability\\
+            Rapid Develppment vs Functionality\\
+            Cost vs Reusability\\
+            Cost vs robustness\\
+            Backward compatability vs readability\\
+
+      \item Out of one of the two explain further why.\\
+            The correctness is up to writers verification. I literally cannot write hundreds of explainations as to why in
+            various different niche circumstances. You're probably correct however.\\
+
+      \item What is a Service subsystem?\\
+            A group of operations provided by the subsystem.\\
+
+      \item How is a service specified?\\
+            With the subsystem interface. Specifies interactions and information flow from/to subsystem boundaries. Should be
+            well-defined and small. Often called an API but bad term during system design.\\
+
+      \item Criteria for subsystem selection should be where?\\
+            Within subsystems we strive for high cohesion.\\
+
+      \item What is cohesion?\\
+            Dependence among classes within a singular subsystem (this is poggers).\\
+      \item Whats the difference between high and low cohesion?\\
+            In low cohesion there is a lot of miscellaneous classes with few assocations. High cohesion there are classes that perform similar tasks
+            and are relation to eachother (assocations!).
+
+      \item What is coupling?\\
+            Depedence between sub systems.
+
+      \item should you priotize cohesion or coupling.\\
+            Cohesion should be strived for while coupling should be avoided if possible.
+
+      \item What problem does high coupling bring.\\
+            Changing things within one subsystem will cause problems on other systems.\\
+
+      \item What techniques can achieve high cohesion and low coupling.\\
+            Partitioning and layers.\\
+
+      \item What is a partition?\\
+            Vertically divide a system into several indepedent subsystems that provide services on the same level of abstraction.\\
+
+      \item What is a layer?\\
+            A subsystem that provides services to a higher layer (hierarchies).
+
+      \item What is closed architecture?\\
+            Any layer is only able to invoke oeprations from the immediate layers below.
+
+      \item why bother with closed architecture?\\
+            Highly maintainable.\\
+
+      \item What is open architecture.\\
+            Any layer is only able to invoke operations from any layer below (Literally Hamdy's contour diagram).\\
+
+      \item Why bother with open architecture?\\
+            Runtime Efficency\\
 
 \end{enumerate}
 
