@@ -518,11 +518,84 @@ Please note any answers in () Typically are not part of the answer rather are ad
       \item what are some disadvantage?\\
             Deployement complexity and service discovery.\\
 
+      \item What does Hw and Sw mapping address?\\
+            Addresses how one realizes subsystems and how the object model mapped on the choosen software is.\\
 
+
+      \item What are processor issues when it comes to mapping?\\
+            Is the computation too demanding for a single processor and can we speed up by distrubuting the task?\\
+
+      \item What are two other issues?\\
+            Memory and I/O issues.
+
+      \item When should you pick a file for data storage?\\
+            When the data is voluminous, when you have a lot of raw data, when you only keep the data for a short time, low information desnity.\\
+
+      \item when should one pick a database?\\
+            Require access at fine detials by multiple users.\\
+            Data must be ported accross multiple platforms.\\
+            Multiple applications access the data?\\
+            Data managament require a lot of infrastructure.\\
+
+      \item What is procedure driven control?\\
+            Control resides within program code.\\
+      \item What is event driven control?\\
+            Control resides within a dispatcher calling functions via callbacks.\\
 
 
 \end{enumerate}
+\section{Object Design}
+\begin{enumerate}
+      \item What is object design?\\
 
+            Object design is the process of adding detials to the requirements analysis and making implementation decisions.\\
+
+      \item What are the key activites of object design.\\
+            Identification of existing solutions.\\
+            Interface Specification\\
+            Object model restructing\\
+            Object model Optimization.\\
+
+      \item Why use inheritance.\\
+            Description of taxonomies/interface specfication.\\
+
+      \item what is the goal of identifying taxonomies?\\
+            Make analysis model more understandable.\\
+
+      \item What are some principles of Reuse?\\
+            Program to an interface not an implementation.\\
+            Delegation as an alternative.\\
+
+      \item What is delgation.\\
+            A way of making composition as powerful as inheritance.\\
+
+            Two objects are involved in handling a request a recieving object delgates operations to a delgate.\\
+
+      \item what are the pros of inheritance?\\
+            Easy to use and supported by many languages. Easy to implement new Functionality\\
+
+      \item what are some cons.\\
+            Inheritance exposes the detials of its parents class and any change to the parent class foruces the subclass to change.\\
+
+      \item Why use delgation.\\
+            Flexibility.\\
+      \item why not use delgations?\\
+            Harder to understand and inefficent.\\
+
+
+      \item What are the three types of design patterns?\\
+            Creational, structural, and behaviorial.\\
+
+      \item What are the SOLID principals of Reuse.\\
+            S: a class should have responsibility over a single part of the Functionality.\\
+            O: A class should be open for extension but closed for modification.\\
+            L: If S is a subtype of T then objects of type T may be prelaced with objects of types S without altering any of the desirble properties of the program.\\
+            I: Many client specific interfaces are better than a singular general interface.\\
+            D: Depend upon abstractions not concretions.\\
+
+\end{enumerate}
+\section{Object design}
+Good luck... ask yourself the design patterns and draw them out. Refer to refactor guru for the answers or if you have a cheat sheet put them on it.\\
 \section{Testing}
 
 \begin{enumerate}
